@@ -22,8 +22,10 @@
 #include <libopencm3/sam/d/gclk.h>
 
 /* User LED */
-#define LEDPORT		PORTB
-#define LED		GPIO30
+//#define LEDPORT		PORTB
+//#define LED		GPIO30
+#define LEDPORT		PORTA
+#define LED		GPIO10
 
 static struct gclk_hw clock = {
 	.gclk0 = SRC_DFLL48M,
